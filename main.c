@@ -111,6 +111,7 @@ int main()
     PRINT_ISA_SUPPORT(amx)
     PRINT_ISA_SUPPORT(paca)
     PRINT_ISA_SUPPORT(pacg)
+    PRINT_ISA_SUPPORT(cssc)
 
 #elif __arm__ || defined(_M_ARM)
     PRINT_ISA_SUPPORT(half)

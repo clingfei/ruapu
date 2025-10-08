@@ -309,7 +309,7 @@ RUAPU_INSTCODE(svesm4, 0x4523e000) // sm4e z0.s,z0.s,z0.s
 RUAPU_INSTCODE(amx, 0x00201220) // amx setup
 RUAPU_INSTCODE(paca, 0xdac10020) // pacia x0, x1
 RUAPU_INSTCODE(pacg, 0x9ac23020) // pacga x0, x1, x2
-
+RUAPU_INSTCODE(cssc, 0x91cc0400) // umin x0, x0, #1 
 
 #elif __arm__ || defined(_M_ARM)
 #if __thumb__
@@ -550,6 +550,7 @@ RUAPU_ISAENTRY(svesm4)
 RUAPU_ISAENTRY(amx)
 RUAPU_ISAENTRY(paca)
 RUAPU_ISAENTRY(pacg)
+RUAPU_ISAENTRY(cssc)
 
 #elif __arm__ || defined(_M_ARM)
 RUAPU_ISAENTRY(half)
